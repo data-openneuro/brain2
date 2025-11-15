@@ -10,18 +10,18 @@ Integration: OpenNeuro partners with platforms like Brainlife.io to enable cloud
 
 ### Download Commmand
 
-Download ds000009 preprocessed DWI data
+Download ds006169 preprocessed DWI data
 
 * **Linux/macOS**
 
 ```bash
-curl -s https://api.github.com/repos/data-openneuro/disease/releases/tags/ds000009 | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-openneuro/disease/releases/tags/ds006169 | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 * **Windows PowerShell**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-openneuro/disease/releases/tags/ds000009").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+(Invoke-RestMethod "https://api.github.com/repos/data-openneuro/disease/releases/tags/ds006169").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
